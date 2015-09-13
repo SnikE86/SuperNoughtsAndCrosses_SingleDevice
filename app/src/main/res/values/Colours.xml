@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gameBoardBackground">#2D2D2D</color>
+    <color name="defaultButtonColour">#34495E</color>
+    <color name="nextMoveButtonColour">#E8BA32</color>
+</resources>
