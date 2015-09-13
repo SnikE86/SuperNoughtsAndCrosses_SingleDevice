@@ -12,7 +12,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="@dimen/surrounding_separation" />
+                android:layout_marginTop="@dimen/surrounding_separation"
+                android:onClick="buttonOnClick" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -21,7 +22,8 @@
                 android:layout_alignBottom="@+id/b1_1"
                 android:layout_toRightOf="@+id/b1_1"
                 android:layout_toEndOf="@+id/b1_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -30,7 +32,8 @@
                 android:layout_alignBottom="@+id/b1_2"
                 android:layout_toRightOf="@+id/b1_2"
                 android:layout_toEndOf="@+id/b1_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!--Game2 -->
 
@@ -41,7 +44,8 @@
                 android:layout_alignBottom="@+id/b1_3"
                 android:layout_toRightOf="@+id/b1_3"
                 android:layout_toEndOf="@+id/b1_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -50,7 +54,8 @@
                 android:layout_alignBottom="@+id/b2_1"
                 android:layout_toRightOf="@+id/b2_1"
                 android:layout_toEndOf="@+id/b2_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -59,7 +64,8 @@
                 android:layout_alignBottom="@+id/b2_2"
                 android:layout_toRightOf="@+id/b2_2"
                 android:layout_toEndOf="@+id/b2_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!--Game3 -->
 
@@ -70,7 +76,8 @@
                 android:layout_alignBottom="@+id/b2_3"
                 android:layout_toRightOf="@+id/b2_3"
                 android:layout_toEndOf="@+id/b2_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -79,7 +86,8 @@
                 android:layout_alignBottom="@+id/b3_1"
                 android:layout_toRightOf="@+id/b3_1"
                 android:layout_toEndOf="@+id/b3_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -88,7 +96,8 @@
                 android:layout_alignBottom="@+id/b3_2"
                 android:layout_toRightOf="@+id/b3_2"
                 android:layout_toEndOf="@+id/b3_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
 
     <!-- Row 2-->
@@ -98,7 +107,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b1_4"
                 android:layout_below="@+id/b1_1"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -107,7 +117,8 @@
                 android:layout_alignBottom="@+id/b1_4"
                 android:layout_toRightOf="@+id/b1_4"
                 android:layout_toEndOf="@+id/b1_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -116,7 +127,8 @@
                 android:layout_alignBottom="@+id/b1_5"
                 android:layout_toRightOf="@+id/b1_5"
                 android:layout_toEndOf="@+id/b1_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game2 -->
             <Button
@@ -126,7 +138,8 @@
                 android:layout_alignBottom="@+id/b1_6"
                 android:layout_toRightOf="@+id/b1_6"
                 android:layout_toEndOf="@+id/b1_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -135,7 +148,8 @@
                 android:layout_alignBottom="@+id/b2_4"
                 android:layout_toRightOf="@+id/b2_4"
                 android:layout_toEndOf="@+id/b2_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -144,7 +158,8 @@
                 android:layout_alignBottom="@+id/b2_5"
                 android:layout_toRightOf="@+id/b2_5"
                 android:layout_toEndOf="@+id/b2_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game3 -->
             <Button
@@ -154,7 +169,8 @@
                 android:layout_alignBottom="@+id/b2_6"
                 android:layout_toRightOf="@+id/b2_6"
                 android:layout_toEndOf="@+id/b2_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -163,7 +179,8 @@
                 android:layout_alignBottom="@+id/b3_4"
                 android:layout_toRightOf="@+id/b3_4"
                 android:layout_toEndOf="@+id/b3_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -172,7 +189,8 @@
                 android:layout_alignBottom="@+id/b3_5"
                 android:layout_toRightOf="@+id/b3_5"
                 android:layout_toEndOf="@+id/b3_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 3-->
         <!--Game1 -->
@@ -181,7 +199,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b1_7"
                 android:layout_below="@+id/b1_4"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -190,7 +209,8 @@
                 android:layout_alignBottom="@+id/b1_7"
                 android:layout_toRightOf="@+id/b1_7"
                 android:layout_toEndOf="@+id/b1_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -199,7 +219,8 @@
                 android:layout_alignBottom="@+id/b1_8"
                 android:layout_toRightOf="@+id/b1_8"
                 android:layout_toEndOf="@+id/b1_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game2 -->
             <Button
@@ -209,7 +230,8 @@
                 android:layout_alignBottom="@+id/b1_9"
                 android:layout_toRightOf="@+id/b1_9"
                 android:layout_toEndOf="@+id/b1_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -218,7 +240,8 @@
                 android:layout_alignBottom="@+id/b2_7"
                 android:layout_toRightOf="@+id/b2_7"
                 android:layout_toEndOf="@+id/b2_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -227,7 +250,8 @@
                 android:layout_alignBottom="@+id/b2_8"
                 android:layout_toRightOf="@+id/b2_8"
                 android:layout_toEndOf="@+id/b2_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game3 -->
             <Button
@@ -237,7 +261,8 @@
                 android:layout_alignBottom="@+id/b2_9"
                 android:layout_toRightOf="@+id/b2_9"
                 android:layout_toEndOf="@+id/b2_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -246,7 +271,8 @@
                 android:layout_alignBottom="@+id/b3_7"
                 android:layout_toRightOf="@+id/b3_7"
                 android:layout_toEndOf="@+id/b3_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -255,7 +281,8 @@
                 android:layout_alignBottom="@+id/b3_8"
                 android:layout_toRightOf="@+id/b3_8"
                 android:layout_toEndOf="@+id/b3_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 4-->
         <!--Game4 -->
@@ -264,7 +291,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b4_1"
                 android:layout_below="@+id/b1_7"
-                android:layout_marginTop="@dimen/large_separation"/>
+                android:layout_marginTop="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -273,7 +301,8 @@
                 android:layout_alignBottom="@+id/b4_1"
                 android:layout_toRightOf="@+id/b4_1"
                 android:layout_toEndOf="@+id/b4_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -282,7 +311,8 @@
                 android:layout_alignBottom="@+id/b4_2"
                 android:layout_toRightOf="@+id/b4_2"
                 android:layout_toEndOf="@+id/b4_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game5 -->
             <Button
@@ -292,7 +322,8 @@
                 android:layout_alignBottom="@+id/b4_3"
                 android:layout_toRightOf="@+id/b4_3"
                 android:layout_toEndOf="@+id/b4_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -301,7 +332,8 @@
                 android:layout_alignBottom="@+id/b5_1"
                 android:layout_toRightOf="@+id/b5_1"
                 android:layout_toEndOf="@+id/b5_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -310,7 +342,8 @@
                 android:layout_alignBottom="@+id/b5_2"
                 android:layout_toRightOf="@+id/b5_2"
                 android:layout_toEndOf="@+id/b5_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game6 -->
             <Button
@@ -320,7 +353,8 @@
                 android:layout_alignBottom="@+id/b5_3"
                 android:layout_toRightOf="@+id/b5_3"
                 android:layout_toEndOf="@+id/b5_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -329,7 +363,8 @@
                 android:layout_alignBottom="@+id/b6_1"
                 android:layout_toRightOf="@+id/b6_1"
                 android:layout_toEndOf="@+id/b6_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -338,7 +373,8 @@
                 android:layout_alignBottom="@+id/b6_2"
                 android:layout_toRightOf="@+id/b6_2"
                 android:layout_toEndOf="@+id/b6_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
 
     <!-- Row 5-->
@@ -348,7 +384,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b4_4"
                 android:layout_below="@+id/b4_1"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -357,7 +394,8 @@
                 android:layout_alignBottom="@+id/b4_4"
                 android:layout_toRightOf="@+id/b4_4"
                 android:layout_toEndOf="@+id/b4_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -366,7 +404,8 @@
                 android:layout_alignBottom="@+id/b4_5"
                 android:layout_toRightOf="@+id/b4_5"
                 android:layout_toEndOf="@+id/b4_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game5 -->
             <Button
@@ -376,7 +415,8 @@
                 android:layout_alignBottom="@+id/b4_6"
                 android:layout_toRightOf="@+id/b4_6"
                 android:layout_toEndOf="@+id/b4_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -385,7 +425,8 @@
                 android:layout_alignBottom="@+id/b5_4"
                 android:layout_toRightOf="@+id/b5_4"
                 android:layout_toEndOf="@+id/b5_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -394,7 +435,8 @@
                 android:layout_alignBottom="@+id/b5_5"
                 android:layout_toRightOf="@+id/b5_5"
                 android:layout_toEndOf="@+id/b5_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game6 -->
             <Button
@@ -404,7 +446,8 @@
                 android:layout_alignBottom="@+id/b5_6"
                 android:layout_toRightOf="@+id/b5_6"
                 android:layout_toEndOf="@+id/b5_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -413,7 +456,8 @@
                 android:layout_alignBottom="@+id/b6_4"
                 android:layout_toRightOf="@+id/b6_4"
                 android:layout_toEndOf="@+id/b6_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -422,7 +466,8 @@
                 android:layout_alignBottom="@+id/b6_5"
                 android:layout_toRightOf="@+id/b6_5"
                 android:layout_toEndOf="@+id/b6_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 6-->
         <!--Game4 -->
@@ -431,7 +476,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b4_7"
                 android:layout_below="@+id/b4_4"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -440,7 +486,8 @@
                 android:layout_alignBottom="@+id/b4_7"
                 android:layout_toRightOf="@+id/b4_7"
                 android:layout_toEndOf="@+id/b4_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -449,7 +496,8 @@
                 android:layout_alignBottom="@+id/b4_8"
                 android:layout_toRightOf="@+id/b4_8"
                 android:layout_toEndOf="@+id/b4_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game5 -->
             <Button
@@ -459,7 +507,8 @@
                 android:layout_alignBottom="@+id/b4_9"
                 android:layout_toRightOf="@+id/b4_9"
                 android:layout_toEndOf="@+id/b4_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -468,7 +517,8 @@
                 android:layout_alignBottom="@+id/b5_7"
                 android:layout_toRightOf="@+id/b5_7"
                 android:layout_toEndOf="@+id/b5_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -477,7 +527,8 @@
                 android:layout_alignBottom="@+id/b5_8"
                 android:layout_toRightOf="@+id/b5_8"
                 android:layout_toEndOf="@+id/b5_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game6 -->
             <Button
@@ -487,7 +538,8 @@
                 android:layout_alignBottom="@+id/b5_9"
                 android:layout_toRightOf="@+id/b5_9"
                 android:layout_toEndOf="@+id/b5_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -496,7 +548,8 @@
                 android:layout_alignBottom="@+id/b6_7"
                 android:layout_toRightOf="@+id/b6_7"
                 android:layout_toEndOf="@+id/b6_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -505,7 +558,8 @@
                 android:layout_alignBottom="@+id/b6_8"
                 android:layout_toRightOf="@+id/b6_8"
                 android:layout_toEndOf="@+id/b6_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 7-->
         <!--Game7 -->
@@ -514,7 +568,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b7_1"
                 android:layout_below="@+id/b4_7"
-                android:layout_marginTop="@dimen/large_separation"/>
+                android:layout_marginTop="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -523,7 +578,8 @@
                 android:layout_alignBottom="@+id/b7_1"
                 android:layout_toRightOf="@+id/b7_1"
                 android:layout_toEndOf="@+id/b7_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -532,7 +588,8 @@
                 android:layout_alignBottom="@+id/b7_2"
                 android:layout_toRightOf="@+id/b7_2"
                 android:layout_toEndOf="@+id/b7_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game8 -->
             <Button
@@ -542,7 +599,8 @@
                 android:layout_alignBottom="@+id/b7_3"
                 android:layout_toRightOf="@+id/b7_3"
                 android:layout_toEndOf="@+id/b7_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -551,7 +609,8 @@
                 android:layout_alignBottom="@+id/b8_1"
                 android:layout_toRightOf="@+id/b8_1"
                 android:layout_toEndOf="@+id/b8_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -560,7 +619,8 @@
                 android:layout_alignBottom="@+id/b8_2"
                 android:layout_toRightOf="@+id/b8_2"
                 android:layout_toEndOf="@+id/b8_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game9 -->
             <Button
@@ -570,7 +630,8 @@
                 android:layout_alignBottom="@+id/b8_3"
                 android:layout_toRightOf="@+id/b8_3"
                 android:layout_toEndOf="@+id/b8_3"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -579,7 +640,8 @@
                 android:layout_alignBottom="@+id/b9_1"
                 android:layout_toRightOf="@+id/b9_1"
                 android:layout_toEndOf="@+id/b9_1"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -588,7 +650,8 @@
                 android:layout_alignBottom="@+id/b9_2"
                 android:layout_toRightOf="@+id/b9_2"
                 android:layout_toEndOf="@+id/b9_2"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 8-->
         <!--Game7 -->
@@ -597,7 +660,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b7_4"
                 android:layout_below="@+id/b7_1"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -606,7 +670,8 @@
                 android:layout_alignBottom="@+id/b7_4"
                 android:layout_toRightOf="@+id/b7_4"
                 android:layout_toEndOf="@+id/b7_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -615,7 +680,8 @@
                 android:layout_alignBottom="@+id/b7_5"
                 android:layout_toRightOf="@+id/b7_5"
                 android:layout_toEndOf="@+id/b7_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game8 -->
             <Button
@@ -625,7 +691,8 @@
                 android:layout_alignBottom="@+id/b7_6"
                 android:layout_toRightOf="@+id/b7_6"
                 android:layout_toEndOf="@+id/b7_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -634,7 +701,8 @@
                 android:layout_alignBottom="@+id/b8_4"
                 android:layout_toRightOf="@+id/b8_4"
                 android:layout_toEndOf="@+id/b8_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -643,7 +711,8 @@
                 android:layout_alignBottom="@+id/b8_5"
                 android:layout_toRightOf="@+id/b8_5"
                 android:layout_toEndOf="@+id/b8_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game9 -->
             <Button
@@ -653,7 +722,8 @@
                 android:layout_alignBottom="@+id/b8_6"
                 android:layout_toRightOf="@+id/b8_6"
                 android:layout_toEndOf="@+id/b8_6"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -662,7 +732,8 @@
                 android:layout_alignBottom="@+id/b9_4"
                 android:layout_toRightOf="@+id/b9_4"
                 android:layout_toEndOf="@+id/b9_4"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -671,7 +742,8 @@
                 android:layout_alignBottom="@+id/b9_5"
                 android:layout_toRightOf="@+id/b9_5"
                 android:layout_toEndOf="@+id/b9_5"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
     <!-- Row 9-->
         <!--Game7 -->
@@ -680,7 +752,8 @@
                 android:layout_height="@dimen/button_width"
                 android:id="@+id/b7_7"
                 android:layout_below="@+id/b7_4"
-                android:layout_marginTop="@dimen/small_separation"/>
+                android:layout_marginTop="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -689,7 +762,8 @@
                 android:layout_alignBottom="@+id/b7_7"
                 android:layout_toRightOf="@+id/b7_7"
                 android:layout_toEndOf="@+id/b7_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -698,7 +772,8 @@
                 android:layout_alignBottom="@+id/b7_8"
                 android:layout_toRightOf="@+id/b7_8"
                 android:layout_toEndOf="@+id/b7_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game8 -->
             <Button
@@ -708,7 +783,8 @@
                 android:layout_alignBottom="@+id/b7_9"
                 android:layout_toRightOf="@+id/b7_9"
                 android:layout_toEndOf="@+id/b7_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -717,7 +793,8 @@
                 android:layout_alignBottom="@+id/b8_7"
                 android:layout_toRightOf="@+id/b8_7"
                 android:layout_toEndOf="@+id/b8_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -726,7 +803,8 @@
                 android:layout_alignBottom="@+id/b8_8"
                 android:layout_toRightOf="@+id/b8_8"
                 android:layout_toEndOf="@+id/b8_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
         <!--Game9 -->
             <Button
@@ -736,7 +814,8 @@
                 android:layout_alignBottom="@+id/b8_9"
                 android:layout_toRightOf="@+id/b8_9"
                 android:layout_toEndOf="@+id/b8_9"
-                android:layout_marginLeft="@dimen/large_separation"/>
+                android:layout_marginLeft="@dimen/large_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -745,7 +824,8 @@
                 android:layout_alignBottom="@+id/b9_7"
                 android:layout_toRightOf="@+id/b9_7"
                 android:layout_toEndOf="@+id/b9_7"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -754,6 +834,7 @@
                 android:layout_alignBottom="@+id/b9_8"
                 android:layout_toRightOf="@+id/b9_8"
                 android:layout_toEndOf="@+id/b9_8"
-                android:layout_marginLeft="@dimen/small_separation"/>
+                android:layout_marginLeft="@dimen/small_separation"
+                android:onClick="buttonOnClick"/>
 
 </RelativeLayout>
