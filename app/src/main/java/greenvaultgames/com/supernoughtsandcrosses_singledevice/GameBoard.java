@@ -15,14 +15,6 @@ import java.util.List;
  * Created by michael on 16/09/2015.
  */
 
-class IntPair {
-    int _x;
-    int _y;
-    IntPair(int x, int y) {_x=x;_y=y;}
-
-    public void SetPair( int x, int y){_x=x;_y=y;}
-}
-
 public class GameBoard extends Activity {
 
     private enum Player{ PlayerNull, Player1, Player2}
@@ -35,8 +27,6 @@ public class GameBoard extends Activity {
 
     private List<Player> _boardsWon;
 
-    private ArrayList<IntPair> _winningButtons;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +36,6 @@ public class GameBoard extends Activity {
 
         setupGameBoardMoves();
 
-        setupWinningButtons();
 
         _currPlayer = Player.Player1;
 
@@ -91,30 +80,6 @@ public class GameBoard extends Activity {
         _gameBoardMoves.add(board7);
         _gameBoardMoves.add(board8);
         _gameBoardMoves.add(board9);
-    }
-
-    private void setupWinningButtons(){
-        _winningButtons = new ArrayList<>(9);
-
-        IntPair board1 = new IntPair(0,0);
-        IntPair board2 = new IntPair(0,0);
-        IntPair board3 = new IntPair(0,0);
-        IntPair board4 = new IntPair(0,0);
-        IntPair board5 = new IntPair(0,0);
-        IntPair board6 = new IntPair(0,0);
-        IntPair board7 = new IntPair(0,0);
-        IntPair board8 = new IntPair(0,0);
-        IntPair board9 = new IntPair(0,0);
-
-        _winningButtons.add(board1);
-        _winningButtons.add(board2);
-        _winningButtons.add(board3);
-        _winningButtons.add(board4);
-        _winningButtons.add(board5);
-        _winningButtons.add(board6);
-        _winningButtons.add(board7);
-        _winningButtons.add(board8);
-        _winningButtons.add(board9);
     }
 
     public void buttonOnClick(View v) {
@@ -608,25 +573,13 @@ public class GameBoard extends Activity {
         if(board[ 0] == board[ 4] && board[ 4] == board[ 8] && board[8] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair(getIdForGameButton1(game_board), getIdForGameButton9(game_board));
-
-            RelativeLayout rl_gameboard =(RelativeLayout)findViewById(R.id.rl_gameboard);
-
-            Button button1 = (Button)findViewById(getIdForGameButton1(game_board));
-            Button button2 = (Button)findViewById(getIdForGameButton9(game_board));
-
-            DrawRedLineView drawView = new DrawRedLineView(this,button1,button2);
-            rl_gameboard.addView(drawView);
+            drawWinLine_board( getIdForGameButton1(game_board), getIdForGameButton9(game_board));
         }
 
         if(board[ 2] == board[ 4] && board[ 4] == board[ 6] && board[6] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton3(game_board), getIdForGameButton7(game_board));
+            drawWinLine_board(getIdForGameButton3(game_board), getIdForGameButton7(game_board));
         }
 
         return result;
@@ -640,23 +593,17 @@ public class GameBoard extends Activity {
         if(board[ 0] == board[ 3] && board[ 3] == board[ 6] && board[6] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton1(game_board), getIdForGameButton7(game_board));
+            drawWinLine_board(getIdForGameButton1(game_board), getIdForGameButton7(game_board));
         }
         if(board[ 1] == board[ 4] && board[ 4] == board[ 7] && board[7] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton2(game_board), getIdForGameButton8(game_board));
+            drawWinLine_board(getIdForGameButton2(game_board), getIdForGameButton8(game_board));
         }
         if(board[ 2] == board[ 5] && board[ 5] == board[ 8] && board[8] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton3(game_board), getIdForGameButton9(game_board));
+            drawWinLine_board(getIdForGameButton3(game_board), getIdForGameButton9(game_board));
         }
 
         return result;
@@ -670,43 +617,81 @@ public class GameBoard extends Activity {
         if(board[ 0] == board[ 1] && board[ 1] == board[ 2] && board[2] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton1(game_board), getIdForGameButton3(game_board));
+            drawWinLine_board(getIdForGameButton1(game_board), getIdForGameButton3(game_board));
         }
         if(board[ 3] == board[ 4] && board[ 4] == board[ 5] && board[5] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton4(game_board), getIdForGameButton6(game_board));
+            drawWinLine_board(getIdForGameButton4(game_board), getIdForGameButton6(game_board));
         }
         if(board[ 6] == board[ 7] && board[ 7] == board[ 8] && board[8] != '\u0000'){
             result = true;
 
-            IntPair winningButtons = _winningButtons.get(game_board - 1);
-
-            winningButtons.SetPair( getIdForGameButton7(game_board), getIdForGameButton9(game_board));
+            drawWinLine_board(getIdForGameButton7(game_board), getIdForGameButton9(game_board));
         }
 
         return result;
     }
 
     private boolean diagonalsWon(){
-        return ((_boardsWon.get(0) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(8) && _boardsWon.get(8) != Player.PlayerNull)
-              ||(_boardsWon.get(2) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(6) && _boardsWon.get(6) != Player.PlayerNull));
+        boolean result = false;
+
+        if(_boardsWon.get(0) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(8) && _boardsWon.get(8) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(1, 9);
+        }
+        if(_boardsWon.get(2) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(6) && _boardsWon.get(6) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(3, 7);
+        }
+
+        return result;
     }
 
     private boolean verticalsWon(){
-        return  ((_boardsWon.get(0) == _boardsWon.get(3) && _boardsWon.get(3) == _boardsWon.get(6) && _boardsWon.get(6) != Player.PlayerNull)
-               ||(_boardsWon.get(1) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(7) && _boardsWon.get(7) != Player.PlayerNull)
-               ||(_boardsWon.get(2) == _boardsWon.get(5) && _boardsWon.get(5) == _boardsWon.get(8) && _boardsWon.get(8) != Player.PlayerNull));
+        boolean result = false;
+
+        if(_boardsWon.get(0) == _boardsWon.get(3) && _boardsWon.get(3) == _boardsWon.get(6) && _boardsWon.get(6) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(1, 7);
+        }
+        if(_boardsWon.get(1) == _boardsWon.get(4) && _boardsWon.get(4) == _boardsWon.get(7) && _boardsWon.get(7) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(2, 8);
+        }
+        if(_boardsWon.get(2) == _boardsWon.get(5) && _boardsWon.get(5) == _boardsWon.get(8) && _boardsWon.get(8) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(3, 9);
+        }
+
+        return result;
     }
 
     private boolean horizontalsWon(){
-        return  ((_boardsWon.get( 0) == _boardsWon.get( 1) && _boardsWon.get( 1) ==_boardsWon.get( 2) && _boardsWon.get(2) != Player.PlayerNull)
-               ||(_boardsWon.get( 3) == _boardsWon.get( 4) && _boardsWon.get( 4) ==_boardsWon.get( 5) && _boardsWon.get(5) != Player.PlayerNull)
-               ||(_boardsWon.get( 6) == _boardsWon.get( 7) && _boardsWon.get( 7) ==_boardsWon.get( 8) && _boardsWon.get(8) != Player.PlayerNull));
+        boolean result = false;
+
+        if(_boardsWon.get( 0) == _boardsWon.get( 1) && _boardsWon.get( 1) ==_boardsWon.get( 2) && _boardsWon.get(2) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(1, 3);
+        }
+        if(_boardsWon.get( 3) == _boardsWon.get( 4) && _boardsWon.get( 4) ==_boardsWon.get( 5) && _boardsWon.get(5) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(4, 6);
+        }
+        if(_boardsWon.get( 6) == _boardsWon.get( 7) && _boardsWon.get( 7) ==_boardsWon.get( 8) && _boardsWon.get(8) != Player.PlayerNull){
+            result = true;
+
+            drawWinLine_game(7, 9);
+        }
+
+        return result;
     }
 
     private int getIdForGameButton1(int gameBoard){
@@ -840,8 +825,32 @@ public class GameBoard extends Activity {
             case 7: return R.id.b7_9;
             case 8: return R.id.b8_9;
             case 9: return R.id.b9_9;
-            default: return 0;
+            default:
+                return 0;
         }
+    }
+
+    private void drawWinLine_board(int buttonId1, int buttonId2){
+        drawWinLine(buttonId1, buttonId2, WinType.wtBoard);
+    }
+
+    private void drawWinLine_game(int gameBoard1, int gameBoard2){
+        drawWinLine( getIdForGameButton5(gameBoard1), getIdForGameButton5(gameBoard2), WinType.wtGame);
+    }
+
+    private void drawWinLine( int buttonId1, int buttonId2, WinType winType){
+        RelativeLayout rl_gameboard =(RelativeLayout)findViewById(R.id.rl_gameboard);
+
+        Button button1 = (Button)findViewById(buttonId1);
+        Button button2 = (Button)findViewById(buttonId2);
+
+        DrawRedLineView drawView = new DrawRedLineView(this,button1,button2);
+
+        drawView.setWinType(winType);
+
+        rl_gameboard.addView(drawView);
+
+        drawView.setElevation(10);
     }
 }
 
