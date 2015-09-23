@@ -3,6 +3,7 @@
     <color name="gameBoardBackground">#2D2D2D</color>
     <color name="defaultButtonColour">#5C97BF</color>
     <color name="nextMoveButtonColour">#E8BA32</color>
-    <color name="Player1WonBoardColour">#5EFF44</color>
-    <color name="Player2WonBoardColour">#FF7699</color>
+    <color name="Player1Colour">#5EFF44</color>
+    <color name="Player2Colour">#FF7699</color>
+    <color name="disabledColor">#000000</color>
 </resources>

@@ -6,4 +6,6 @@
     <dimen name="button_width">37dp</dimen>
     <dimen name="small_separation">2dp</dimen>
     <dimen name="large_separation">8dp</dimen>
+    <dimen name="text_separation">20dp</dimen>
+    <dimen name="header_text_size">30dp</dimen>
 </resources>

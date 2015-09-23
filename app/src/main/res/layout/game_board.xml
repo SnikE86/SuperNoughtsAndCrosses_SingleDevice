@@ -838,4 +838,36 @@
                 android:layout_marginLeft="@dimen/small_separation"
                 android:onClick="buttonOnClick"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_separation"
+        android:layout_marginLeft="@dimen/text_separation"
+        android:layout_marginBottom="@dimen/text_separation"
+        android:padding="@dimen/large_separation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 1"
+        android:id="@+id/player1Text"
+        android:textSize="@dimen/header_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@drawable/player1_text_colours"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_separation"
+        android:layout_marginRight="@dimen/text_separation"
+        android:layout_marginBottom="@dimen/text_separation"
+        android:padding="@dimen/large_separation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 2"
+        android:id="@+id/player2Text"
+        android:textSize="@dimen/header_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@drawable/player2_text_colours"/>
+
 </RelativeLayout>
